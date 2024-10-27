@@ -8,34 +8,38 @@
     <title>اله حسابية</title>
   </head>
   <body>
+    <header>
+      <h1 id="text" style="color: rgb(247, 17, 51);">أهلا وسهلا بكم</h1>
+      <h2>لأجراء عملياتك الحسابية</h2>
+    </header>
     <main>
-    <div class="calculator">
-      <div class="screen" id="screen">0</div>
-      <div class="buttons">
-        <div class="button clear" onclick="clearscreen()">c</div>
-        <div class="button" onclick="append('/')">÷</div>
-        <div class="button" onclick="append('*')">×</div>
-        <div class="button" onclick="append('-')">-</div>
+      <div class="calculator">
+        <div class="screen" id="screen">0</div>
+        <div class="buttons">
+          <div class="button clear" onclick="clearscreen()">c</div>
+          <div class="button" onclick="append('/')">÷</div>
+          <div class="button" onclick="append('*')">×</div>
+          <div class="button" onclick="append('-')">-</div>
 
-        <div class="button" onclick="append('7')">7</div>
-        <div class="button" onclick="append('8')">8</div>
-        <div class="button" onclick="append('9')">9</div>
-        <div class="button operator" onclick="append('+')">+</div>
+          <div class="button" onclick="append('7')">7</div>
+          <div class="button" onclick="append('8')">8</div>
+          <div class="button" onclick="append('9')">9</div>
+          <div class="button operator" onclick="append('+')">+</div>
 
-        <div class="button" onclick="append('4')">4</div>
-        <div class="button" onclick="append('5')">5</div>
-        <div class="button" onclick="append('6')">6</div>
+          <div class="button" onclick="append('4')">4</div>
+          <div class="button" onclick="append('5')">5</div>
+          <div class="button" onclick="append('6')">6</div>
 
-        <div class="button" onclick="append('1')">1</div>
-        <div class="button" onclick="append('2')">2</div>
-        <div class="button" onclick="append('3')">3</div>
+          <div class="button" onclick="append('1')">1</div>
+          <div class="button" onclick="append('2')">2</div>
+          <div class="button" onclick="append('3')">3</div>
 
-        <div class="button" onclick="append('0')">0</div>
-        <div class="button" onclick="append('.')">.</div>
-        <div id="eq" class="button equal" onclick="calculate()">=</div>
+          <div class="button" onclick="append('0')">0</div>
+          <div class="button" onclick="append('.')">.</div>
+          <div id="eq" class="button equal" onclick="calculate()">=</div>
+        </div>
       </div>
-    </div>
-  </main>
+    </main>
     <script>
       let screen = document.getElementById("screen");
 
@@ -57,6 +61,7 @@
         } catch (error) {
           screen.innerText = "خطأ";
         }
+        // text.innerHTML = "تجربة ممتعة";
       }
     </script>
   </body>
